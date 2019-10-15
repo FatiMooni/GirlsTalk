@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Navbar.scss';
 
 class NavbarC extends Component {
 	state = {};
@@ -13,13 +14,13 @@ class NavbarC extends Component {
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='ml-auto'>
-						<Nav.Link href='#home' to='/'>
+						<Nav.Link href='./' to='/'>
 							Home
 						</Nav.Link>
-						<Nav.Link href='#about' to='/about'>
+						<Nav.Link href='about' to='/about'>
 							About
 						</Nav.Link>
-						<Nav.Link href='#news' to='/news'>
+						<Nav.Link href='news' to='/news'>
 							News
 						</Nav.Link>
 					</Nav>
